@@ -1,4 +1,4 @@
-# Incremental Build and Check Cost of Rust Serialization Libraries Benchmarks
+# Incremental Build and Check Cost of Rust Serialization Library Benchmarks
 
 This benchmark suite measures the compile time and runtime cost of Rust serialization libraries across warm builds, warm checks, clean builds, and runtime performance.
 
@@ -43,8 +43,6 @@ cpu:     AMD Ryzen 9 5950X 16-Core Processor (32 threads)
 memory:  63 GB
 caches:  L1d: 512 KiB (16 instances), L1i: 512 KiB (16 instances), L2: 8 MiB (16 instances), L3: 64 MiB (2 instances)
 ```
-
-
 
 ## Methodology
 
@@ -126,4 +124,3 @@ the overall aggregated benchmark scores.
 
 I encourage you to look into the detailed benchmarks which provide benchmark results for each variant in detail
 along with CPU instructions, Cycle count, etc and the runtime benchmarks include the final binary size.
-

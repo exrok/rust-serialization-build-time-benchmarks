@@ -1,4 +1,4 @@
-# Incremental Build and Check Cost of Rust Serialization Libraries Benchmarks
+# Incremental Build and Check Cost of Rust Serialization Library Benchmarks
 
 This benchmark suite measures the compile time and runtime cost of Rust serialization libraries across warm builds, warm checks, clean builds, and runtime performance.
 
