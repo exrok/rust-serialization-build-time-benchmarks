@@ -1,0 +1,20 @@
+[action.run-all]
+sh = '''
+cargo run --release -- run \
+    --task all \
+    --lib serde,nanoserde,miniserde,midiserde,jsony,musli,facet \
+    --results-dir ./results/
+'''
+
+[action.report]
+sh = '''
+cargo run -- report --results-dir results/ --report-dir .
+'''
+
+[action.optimize-report]
+sh = '''
+set -eu
+
+find "report" -name '*.svg' -exec svgo --multipass -q {} +
+find "report" -name '*.png' | parallel zopflipng -y --lossy_8bit --iterations=10  {} {}
+'''
